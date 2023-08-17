@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qe9-g7-Kta">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Music Player View Controller-->
+        <scene sceneID="Gud-JI-gEm">
+            <objects>
+                <viewController id="qe9-g7-Kta" customClass="MusicPlayerViewController" customModule="HW_32_AppleMusic_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d7g-QO-I8J">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g5O-8d-H8k">
+                                <rect key="frame" x="24" y="104" width="380" height="380"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wavcrushRockingChair" translatesAutoresizingMaskIntoConstraints="NO" id="WMk-1f-jEe" userLabel="musicCoverImageView">
+                                        <rect key="frame" x="0.0" y="0.0" width="380" height="380"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="Seb-Qb-0Px"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxE-d1-Er2" userLabel="forwardBtn">
+                                <rect key="frame" x="285" y="693" width="70" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="forward.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="24"/>
+                                    <color key="baseForegroundColor" name="customColorSet"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="forwardBtnTapped:" destination="qe9-g7-Kta" eventType="touchUpInside" id="Owa-zU-LS7"/>
+                                    <action selector="forwardBtnTouchDown:" destination="qe9-g7-Kta" eventType="touchDown" id="s7l-qZ-PZ4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="rocking chair" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFy-MJ-wbb" userLabel="songNameBtn">
+                                <rect key="frame" x="32" y="533" width="123" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="customColorSet"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" name="customColorSet"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="wavcrush" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hs0-LF-4ZX" userLabel="artistsLabel">
+                                <rect key="frame" x="32" y="557" width="84" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" name="customColorSet"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyY-rb-9eN" userLabel="moreBtn">
+                                <rect key="frame" x="368" y="533" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="customColorSet"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="ellipsis.circle.fill" catalog="system" renderingMode="hierarchical-single">
+                                        <hierarchicalColors>
+                                            <color white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="23"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="moreBtnTapped:" destination="qe9-g7-Kta" eventType="touchUpInside" id="oeh-QM-PC9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMR-Fm-VSj" userLabel="backwardBtn">
+                                <rect key="frame" x="74" y="693" width="70" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="backward.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="24"/>
+                                    <color key="baseForegroundColor" name="customColorSet"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backwardBtnTapped:" destination="qe9-g7-Kta" eventType="touchUpInside" id="3ph-nO-W82"/>
+                                    <action selector="backwardBtnTouchDown:" destination="qe9-g7-Kta" eventType="touchDown" id="0yD-X8-DTh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MQ-zM-ATj" userLabel="airplayBtn">
+                                <rect key="frame" x="197" y="847" width="34" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="airplayaudio" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="16"/>
+                                    <color key="baseForegroundColor" name="customColorSet"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="airPlayerBtnTapped:" destination="qe9-g7-Kta" eventType="touchUpInside" id="HDX-vm-XOC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgL-PT-vt1" userLabel="listBtn">
+                                <rect key="frame" x="300" y="847" width="34" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="list.bullet" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17"/>
+                                    <color key="baseForegroundColor" name="customColorSet"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hx-4B-bbJ" userLabel="quoteBtn">
+                                <rect key="frame" x="94" y="847" width="34" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="quote.bubble" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="15"/>
+                                    <color key="baseForegroundColor" name="customColorSet"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGK-9k-UyI" userLabel="speakerSmallerBtn">
+                                <rect key="frame" x="30" y="799" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" name="customColorSet"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="speaker.fill" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="15"/>
+                                </state>
+                                <connections>
+                                    <action selector="volumeSliderAndIconTouchDown:" destination="qe9-g7-Kta" eventType="touchUpInside" id="ybd-n2-o8h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8d-RH-7kk" userLabel="speakerLargerBtn">
+                                <rect key="frame" x="371" y="799" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="customColorSet"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="speaker.wave.3.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="15"/>
+                                </state>
+                                <connections>
+                                    <action selector="volumeSliderAndIconTouchDown:" destination="qe9-g7-Kta" eventType="touchUpInside" id="K4L-PO-YuU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecn-cB-Z9n">
+                                <rect key="frame" x="32" y="630" width="27" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0:53" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pM7-PM-VHM">
+                                <rect key="frame" x="369" y="630" width="27" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQW-5e-mov" userLabel="playBtn">
+                                <rect key="frame" x="187" y="691" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                    </preferredSymbolConfiguration>
+                                    <color key="baseForegroundColor" name="customColorSet"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnTouchDown:" destination="qe9-g7-Kta" eventType="touchDown" id="4rw-BZ-31u"/>
+                                    <action selector="statusBtnTapped:" destination="qe9-g7-Kta" eventType="touchUpInside" id="xXu-yy-TRe"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="nnI-Np-veT">
+                                <rect key="frame" x="26" y="592" width="377" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="customColorSet"/>
+                                <color key="thumbTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="songDurationSlider:" destination="qe9-g7-Kta" eventType="valueChanged" id="P1p-GD-9Mo"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="ng1-ug-90k">
+                                <rect key="frame" x="64" y="799" width="300" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="customColorSet"/>
+                                <color key="thumbTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="volumeSliderAndIconTouchDown:" destination="qe9-g7-Kta" eventType="touchDown" id="cJW-vs-xsp"/>
+                                    <action selector="volumeSliderValueChanged:" destination="qe9-g7-Kta" eventType="valueChanged" id="c3D-En-uoy"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qIM-Sz-XZx"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tFT-pM-kHd"/>
+                    <connections>
+                        <outlet property="airPlayBtn" destination="9MQ-zM-ATj" id="WgU-3i-3Xn"/>
+                        <outlet property="artistsLabel" destination="Hs0-LF-4ZX" id="blo-uG-Dwt"/>
+                        <outlet property="backwardBtn" destination="nMR-Fm-VSj" id="IQi-Vz-Won"/>
+                        <outlet property="containerView" destination="g5O-8d-H8k" id="ZGL-h0-fSc"/>
+                        <outlet property="dieDownBtn" destination="tGK-9k-UyI" id="S4d-6a-0C1"/>
+                        <outlet property="forwardBtn" destination="QxE-d1-Er2" id="yrX-J2-Ohj"/>
+                        <outlet property="listBtn" destination="WgL-PT-vt1" id="OoY-Z2-bt1"/>
+                        <outlet property="louderBtn" destination="m8d-RH-7kk" id="E8m-4n-cdP"/>
+                        <outlet property="moreBtn" destination="dyY-rb-9eN" id="zy2-PO-C1m"/>
+                        <outlet property="musicCoverImageView" destination="WMk-1f-jEe" id="tBW-Yk-AbF"/>
+                        <outlet property="musicEndLabel" destination="pM7-PM-VHM" id="GqI-IW-R16"/>
+                        <outlet property="musicStartLabel" destination="ecn-cB-Z9n" id="5uX-TW-ZMx"/>
+                        <outlet property="quoteBtn" destination="3hx-4B-bbJ" id="zFg-ri-9yo"/>
+                        <outlet property="songLengthSlider" destination="nnI-Np-veT" id="gqO-3g-YQU"/>
+                        <outlet property="songNameBtn" destination="PFy-MJ-wbb" id="Ith-bs-tsS"/>
+                        <outlet property="statusBtn" destination="MQW-5e-mov" id="k3t-9t-PzU"/>
+                        <outlet property="view" destination="d7g-QO-I8J" id="HCJ-6c-8NU"/>
+                        <outlet property="volumeSlider" destination="ng1-ug-90k" id="BQr-aq-vCa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sIk-xa-f8u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2194" y="2451"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="systemPinkColor"/>
+    <resources>
+        <image name="airplayaudio" catalog="system" width="128" height="123"/>
+        <image name="backward.fill" catalog="system" width="128" height="77"/>
+        <image name="ellipsis.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="forward.fill" catalog="system" width="128" height="77"/>
+        <image name="list.bullet" catalog="system" width="128" height="87"/>
+        <image name="play.fill" catalog="system" width="117" height="128"/>
+        <image name="quote.bubble" catalog="system" width="128" height="110"/>
+        <image name="speaker.fill" catalog="system" width="128" height="125"/>
+        <image name="speaker.wave.3.fill" catalog="system" width="128" height="84"/>
+        <image name="wavcrushRockingChair" width="680" height="680"/>
+        <namedColor name="customColorSet">
+            <color red="0.12999999523162842" green="0.12999999523162842" blue="0.12999999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
