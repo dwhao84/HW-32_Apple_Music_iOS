@@ -212,8 +212,8 @@
                         <outlet property="louderBtn" destination="m8d-RH-7kk" id="E8m-4n-cdP"/>
                         <outlet property="moreBtn" destination="dyY-rb-9eN" id="zy2-PO-C1m"/>
                         <outlet property="musicCoverImageView" destination="WMk-1f-jEe" id="tBW-Yk-AbF"/>
-                        <outlet property="musicEndLabel" destination="pM7-PM-VHM" id="GqI-IW-R16"/>
-                        <outlet property="musicStartLabel" destination="ecn-cB-Z9n" id="5uX-TW-ZMx"/>
+                        <outlet property="musicDurationEndLabel" destination="pM7-PM-VHM" id="GqI-IW-R16"/>
+                        <outlet property="musicStartDurationLabel" destination="ecn-cB-Z9n" id="5uX-TW-ZMx"/>
                         <outlet property="quoteBtn" destination="3hx-4B-bbJ" id="zFg-ri-9yo"/>
                         <outlet property="songLengthSlider" destination="nnI-Np-veT" id="gqO-3g-YQU"/>
                         <outlet property="songNameBtn" destination="PFy-MJ-wbb" id="Ith-bs-tsS"/>

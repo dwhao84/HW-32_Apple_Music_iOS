@@ -19,8 +19,8 @@ class MusicPlayerViewController: UIViewController, AVRoutePickerViewDelegate {
     @IBOutlet weak var songNameBtn: UILabel!
     @IBOutlet weak var artistsLabel: UILabel!
 
-    @IBOutlet weak var musicStartLabel: UILabel!
-    @IBOutlet weak var musicEndLabel: UILabel!
+    @IBOutlet weak var musicStartDurationLabel: UILabel!
+    @IBOutlet weak var musicDurationEndLabel: UILabel!
 
     @IBOutlet weak var moreBtn: UIButton!
 
@@ -53,6 +53,8 @@ class MusicPlayerViewController: UIViewController, AVRoutePickerViewDelegate {
 
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
             view.addGestureRecognizer(tapGesture)
+
+
     }
 
     //morebtn
@@ -156,6 +158,13 @@ class MusicPlayerViewController: UIViewController, AVRoutePickerViewDelegate {
         print("Song is playing")
     }
 
+
+    func timeConverter(min: Float, sec: Float) -> Float {
+        let totalSeconds = min * 60 + sec
+        return totalSeconds
+    }
+
+
     func updateUI () {
         //Add gradientBackgroundColor
         setupGradientBackground()
@@ -177,8 +186,8 @@ class MusicPlayerViewController: UIViewController, AVRoutePickerViewDelegate {
 
         //Add Alpha for label
         artistsLabel.addLabelAlphaSec()
-        musicStartLabel.addLabelAlpha()
-        musicEndLabel.addLabelAlpha()
+        musicStartDurationLabel.addLabelAlpha()
+        musicDurationEndLabel.addLabelAlpha()
 
         //Add playBtn
         statusBtn.setupPlayBtn()
@@ -257,4 +266,11 @@ class MusicPlayerViewController: UIViewController, AVRoutePickerViewDelegate {
         routePickerView.isHidden = true
     }
 
+
 }
+
+//import AVFoundation
+//import CoreMedia
+
+
+
