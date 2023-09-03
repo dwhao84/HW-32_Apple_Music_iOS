@@ -6,11 +6,10 @@
 //
 
 import UIKit
+import AVFoundation
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -19,8 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // Adjust the UITabBarItem when Tab Bar unselected.
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.gray], for: .normal)
-
+        
+        // Custom tabBar appearance for tintColor
         UITabBar.appearance().tintColor = .systemPink
+
+        // Playing music when the app is in the background.
+        try? AVAudioSession.sharedInstance().setCategory(.playback)
+
+        // Playing music on an iPhone while it's on the lock screen.
+        application.beginReceivingRemoteControlEvents()
 
         return true
     }

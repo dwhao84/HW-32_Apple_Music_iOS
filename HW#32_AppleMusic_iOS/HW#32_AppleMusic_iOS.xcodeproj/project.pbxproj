@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D39144302A853DBD0018B489 /* rocking chair.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D391442F2A853DBD0018B489 /* rocking chair.mp3 */; };
+		D37671482A9927A800181641 /* songInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37671472A9927A800181641 /* songInfo.swift */; };
+		D376716D2A99CEDD00181641 /* 0755.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D376716A2A99CEDD00181641 /* 0755.mp3 */; };
+		D376716E2A99CEDD00181641 /* rocking chair.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D376716B2A99CEDD00181641 /* rocking chair.mp3 */; };
+		D376716F2A99CEDD00181641 /* 心如止水.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D376716C2A99CEDD00181641 /* 心如止水.mp3 */; };
+		D37671752A9B712600181641 /* ClassOfSliderHeight+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37671742A9B712600181641 /* ClassOfSliderHeight+Extension.swift */; };
+		D390AAAE2AA4D23B00642A32 /* Heat Waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D390AAAD2AA4D23B00642A32 /* Heat Waves.mp3 */; };
 		D39144322A8A221D0018B489 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39144312A8A221D0018B489 /* View+Extension.swift */; };
 		D39144342A8A22980018B489 /* ImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39144332A8A22980018B489 /* ImageView+Extensions.swift */; };
 		D39144362A8A22D30018B489 /* Button+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39144352A8A22D30018B489 /* Button+Extensions.swift */; };
@@ -22,7 +27,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D391442F2A853DBD0018B489 /* rocking chair.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "rocking chair.mp3"; path = "../../../../rocking chair.mp3"; sourceTree = "<group>"; };
+		D37671472A9927A800181641 /* songInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = songInfo.swift; sourceTree = "<group>"; };
+		D376716A2A99CEDD00181641 /* 0755.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 0755.mp3; sourceTree = "<group>"; };
+		D376716B2A99CEDD00181641 /* rocking chair.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rocking chair.mp3"; sourceTree = "<group>"; };
+		D376716C2A99CEDD00181641 /* 心如止水.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "心如止水.mp3"; sourceTree = "<group>"; };
+		D37671742A9B712600181641 /* ClassOfSliderHeight+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClassOfSliderHeight+Extension.swift"; sourceTree = "<group>"; };
+		D390AAAD2AA4D23B00642A32 /* Heat Waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Heat Waves.mp3"; sourceTree = "<group>"; };
 		D39144312A8A221D0018B489 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		D39144332A8A22980018B489 /* ImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+Extensions.swift"; sourceTree = "<group>"; };
 		D39144352A8A22D30018B489 /* Button+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Extensions.swift"; sourceTree = "<group>"; };
@@ -49,12 +59,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D37671712A99D10E00181641 /* MusicResource */ = {
+			isa = PBXGroup;
+			children = (
+				D390AAAD2AA4D23B00642A32 /* Heat Waves.mp3 */,
+				D376716A2A99CEDD00181641 /* 0755.mp3 */,
+				D376716B2A99CEDD00181641 /* rocking chair.mp3 */,
+				D376716C2A99CEDD00181641 /* 心如止水.mp3 */,
+			);
+			path = MusicResource;
+			sourceTree = "<group>";
+		};
 		D391443B2A8A23820018B489 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				D39144352A8A22D30018B489 /* Button+Extensions.swift */,
-				D39144392A8A23510018B489 /* Slider+Extensions.swift */,
 				D39144372A8A232C0018B489 /* Label+Extensions.swift */,
+				D39144392A8A23510018B489 /* Slider+Extensions.swift */,
+				D37671742A9B712600181641 /* ClassOfSliderHeight+Extension.swift */,
 				D39144312A8A221D0018B489 /* View+Extension.swift */,
 				D39144332A8A22980018B489 /* ImageView+Extensions.swift */,
 			);
@@ -83,12 +105,13 @@
 				D3CFA0052A7F888200C9D212 /* AppDelegate.swift */,
 				D3CFA0072A7F888200C9D212 /* SceneDelegate.swift */,
 				D3CFA00B2A7F888200C9D212 /* Main.storyboard */,
+				D37671472A9927A800181641 /* songInfo.swift */,
 				D3CFA02A2A82140B00C9D212 /* MusicPlayerViewController.swift */,
+				D37671712A99D10E00181641 /* MusicResource */,
 				D391443B2A8A23820018B489 /* Extensions */,
 				D3CFA00E2A7F888500C9D212 /* Assets.xcassets */,
 				D3CFA0102A7F888500C9D212 /* LaunchScreen.storyboard */,
 				D3CFA0132A7F888500C9D212 /* Info.plist */,
-				D391442F2A853DBD0018B489 /* rocking chair.mp3 */,
 			);
 			path = "HW#32_AppleMusic_iOS";
 			sourceTree = "<group>";
@@ -151,10 +174,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D376716E2A99CEDD00181641 /* rocking chair.mp3 in Resources */,
+				D390AAAE2AA4D23B00642A32 /* Heat Waves.mp3 in Resources */,
 				D3CFA0122A7F888500C9D212 /* LaunchScreen.storyboard in Resources */,
 				D3CFA00F2A7F888500C9D212 /* Assets.xcassets in Resources */,
+				D376716F2A99CEDD00181641 /* 心如止水.mp3 in Resources */,
 				D3CFA00D2A7F888200C9D212 /* Main.storyboard in Resources */,
-				D39144302A853DBD0018B489 /* rocking chair.mp3 in Resources */,
+				D376716D2A99CEDD00181641 /* 0755.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,12 +192,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D391443A2A8A23510018B489 /* Slider+Extensions.swift in Sources */,
+				D37671752A9B712600181641 /* ClassOfSliderHeight+Extension.swift in Sources */,
 				D3CFA0062A7F888200C9D212 /* AppDelegate.swift in Sources */,
 				D39144382A8A232C0018B489 /* Label+Extensions.swift in Sources */,
 				D3CFA02B2A82140B00C9D212 /* MusicPlayerViewController.swift in Sources */,
 				D39144322A8A221D0018B489 /* View+Extension.swift in Sources */,
 				D3CFA0082A7F888200C9D212 /* SceneDelegate.swift in Sources */,
 				D39144342A8A22980018B489 /* ImageView+Extensions.swift in Sources */,
+				D37671482A9927A800181641 /* songInfo.swift in Sources */,
 				D39144362A8A22D30018B489 /* Button+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,11 +345,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HW#32_AppleMusic_iOS/HW#32_AppleMusic_iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7NJ9W73ML8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "HW#32_AppleMusic_iOS/Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "<key>NSLocalNetworkUsageDescription</key>\n<string>此應用需要訪問本地網絡以連接到 AirPlay 裝置。</string>\n";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -345,11 +375,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HW#32_AppleMusic_iOS/HW#32_AppleMusic_iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7NJ9W73ML8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "HW#32_AppleMusic_iOS/Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "<key>NSLocalNetworkUsageDescription</key>\n<string>此應用需要訪問本地網絡以連接到 AirPlay 裝置。</string>\n";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

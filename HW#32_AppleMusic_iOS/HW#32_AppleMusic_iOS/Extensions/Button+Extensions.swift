@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-//Add ALPHA for btn
+// Add ALPHA for btn
 extension UIButton {
     func addBtnAlpha () {
         self.alpha = 0.5
@@ -17,18 +17,20 @@ extension UIButton {
     func addBtnAlphaWithoutLyris () {
         self.alpha = 0.2
     }
-    //setup Play btn
+
+    // setup Play btn
     func setupPlayBtn () {
         self.setImage(UIImage(systemName: "play.fill"), for: .normal)
         self.titleLabel?.font = UIFont.systemFont(ofSize: 34)
     }
-    //set Pause btn
+
+    // Set Pause btn
     func setPauseBtn () {
         self.setImage(UIImage(systemName: "pause.fill"), for: .normal)
         self.titleLabel?.font = UIFont.systemFont(ofSize: 34)
     }
 
-    //setup when Btn tapped become smaller
+    // Setup when Btn tapped become smaller
     func setupBtnWhenTappedBecomeSmaller () {
         self.transform = CGAffineTransform.identity.scaledBy(x: 3  , y: 3)
     }
@@ -43,5 +45,13 @@ extension UIButton {
 
     func setupBtnTouchDownBecomeLarge () {
         self.transform = CGAffineTransform.identity.scaledBy(x: 0.9, y: 0.9)
+    }
+
+    func setupBtnTouchDown () {
+            self.alpha = 0.1
+    }
+
+    func setupBtnTouchDownRecover () {
+            self.alpha = 0.5
     }
 }

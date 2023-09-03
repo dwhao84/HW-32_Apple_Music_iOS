@@ -9,10 +9,6 @@
     &lt;string&gt;_airplay._tcp&lt;/string&gt;
 &lt;/array&gt;</string>
 	</array>
-	<key>NSLocalNetworkUsageDescription</key>
-	<string>&lt;key&gt;NSLocalNetworkUsageDescription&lt;/key&gt;
-&lt;string&gt;此應用需要訪問本地網絡以連接到 AirPlay 裝置。&lt;/string&gt;
-</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -32,5 +28,12 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+		<string>fetch</string>
+		<string>nearby-interaction</string>
+		<string>processing</string>
+	</array>
 </dict>
 </plist>

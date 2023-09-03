@@ -9,11 +9,12 @@ import Foundation
 import UIKit
 
 extension UIView {
-    func customUIView() {
-        self.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2).cgColor
-        self.layer.cornerRadius = self.frame.midX/30
-        self.clipsToBounds = true
-        self.layer.shadowOffset = CGSize(width: 0, height: 10)
-        self.layer.shadowOpacity = 100
+    
+    func viewZoomIOut () {
+        self.transform = CGAffineTransform.identity.scaledBy(x: 0.72, y: 0.72)
     }
+    func viewZoomIn () {
+        self.transform = CGAffineTransform.identity.scaledBy(x: 1, y: 1)
+    }
+    
 }

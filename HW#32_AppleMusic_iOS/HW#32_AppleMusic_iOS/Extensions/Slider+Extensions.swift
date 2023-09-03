@@ -12,17 +12,17 @@ extension UISlider {
     func customSongLengthSlider () {
         self.frame = CGRect(x: 26, y: 592, width: 380, height: 30)
         self.thumbTintColor = .clear
-        self.minimumValue = 1
-        self.value = 1
-        self.maximumValue = 10
+        self.minimumValue = 0.1
+        self.value = 0.0
+        self.maximumValue = 1
     }
 
     func customVolumeSlider () {
         self.frame = CGRect(x: 64, y: 800, width: 300, height: 30)
         self.thumbTintColor = .clear
-        self.minimumValue = 1
-        self.value = 1
-        self.maximumValue = 10
+        self.minimumValue = 0.1
+        self.value = 0.5
+        self.maximumValue = 1
     }
 
     func setupSliderWhenTappedBecomeLarger () {
@@ -32,5 +32,4 @@ extension UISlider {
     func setupSliderWhenTappedBecomeNormal () {
         self.transform = CGAffineTransform.identity.scaledBy(x: 1  , y: 1)
     }
-
 }
